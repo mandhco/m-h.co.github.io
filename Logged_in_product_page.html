@@ -1,0 +1,1811 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS_files/ecommerce-price-men.css">
+    <script src="JS_files/ecommerce-price-men.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="Plugins/slick-master/slick/slick-theme1.css" />
+    <script type="text/javascript" src="Plugins/slick-master/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.css" />
+    <link rel="icon" type="images/png" href="images/icon.png" sizes="40x40">
+    <style>
+        a {
+            color: rgba(234, 101, 132, 0.996)
+        }
+        
+        a:hover {
+            color: rgba(234, 101, 132, 0.996)
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--header part start-->
+    <div class="container-fluid text-white" id="change-color">
+        <div class="row" id="top-containt">
+            <div class="col-4 text-center">
+                <a href="ecommerce.html"><img src="Images/shopping-logo.png" height="90px" class="color logo-1 logo-sift"></a>
+                <a href="ecommerce.html"><img src="Images/profile-icon.png" height="70px" class=" color logo-2 mt-1 ml-2"></a>
+            </div>
+            <div class="col-8 pt-4 mt-1 text-center">
+                <span class="dropdown dropdown-toggle profile" data-toggle="dropdown" style="color:rgba(234, 101, 132, 0.996)">
+                  <a href="#/"><img src="Images/profile-icon.png" class="profile-icon color"></a>
+                </span>
+                <ul class="dropdown-menu mt-4 text-center" style="margin-left:-6%;border-radius:10px;">
+                    <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Help Center </a></li>
+                    <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Order History</a></li>
+                    <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Change Password</a></li>
+                    <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Update Profile</a></li>
+                    <li class="pre-profile-1 pt-2 pb-2"><a href="login-form.html" class="color" style="font-weight:600">Log In</a></li>
+                </ul>
+                <span class="menu-1"><a href="ecommerce.html" class="color">home</a></span>
+                <span class="menu"><a href="ecommerce-price-men.html" class="color">shop</a></span>
+                <span class="menu"><a href="about-us.html#/" class="color">about</a></span>
+                <span class="menu"><a href="contact-form.html" class="color">contact</a></span>
+                <span class="menu-bar text-right"><a href="#/" class="color">&#9776;</a></span>
+                <span class="menu-bar-1 text-right"><a href="#/" class="color">&#9776;</a></span>
+                <span class="menu-bar-2 text-right"><a href="#/" class="color">&#9776;</a></span>
+            </div>
+        </div>
+        <div class="container-fluid side-bar px-0">
+            <div class="col-12 text-right bg-danger">
+                <span class="close"><a href="#/" class="color">&times;</a></span>
+            </div>
+            <ul class="pt-5 pre-side-bar">
+                <li class="pt-4" style="margin-left:-5%;"><a href="ecommerce.html" class="color">home</a></li>
+                <li class="pt-3" style="margin-left:-5%"><a href="ecommerce-price-men.html" class="color">shop</a></li>
+                <li class="pt-3" style="margin-left:-5%"><a href="about-us.html#/" class="color">about</a></li>
+                <li class="pt-3" style="margin-left:-5%"><a href="contact-form.html" class="color">contact</a></li>
+                <li class="pt-3" style="margin-left:-5%"><a href="#/" class="color">Update profile</a></li>
+                <li class="pt-3" style="margin-left:-5%"><a href="login-form.html" class="color">Log In</a><span><a href="#" class="color"><img src="Images/log-in..png" class="log-in"></a></span></li>
+            </ul>
+        </div>
+    </div>
+    <!--header part end-->
+    <div class="container-fluid mt-5 pt-5">
+        <div class="row">
+
+            <!--left side col start-->
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                <div class="container large-left-sider">
+                    <div class="row">
+                        <div class="col-12 px-0 pt-5 pb-4 text-center pl-0">
+                            <input class="search-box" type="text" placeholder="Search.."><span><button class="search-button"><i class="fa fa-search" id="search-icon"></i></button></span>
+                        </div>
+                    </div>
+                    <div class="row pl-3">
+                        <div class="col-12 pt-3">
+                            <p style="font-size:20px;text-transform: uppercase;font-weight: 600;">price</p>
+                            <span class="text-bold" name="select-price"><input type="radio" name="price" class="open-content-one-hundred"> ₱200-299</span><br>
+                            <span class="text-bold" name="select-price"><input type="radio" name="price" class="open-content-two-hundred"> ₱300-399</span><br>
+                            <span class="text-bold" name="select-price"><input type="radio" name="price" class="open-content-three-hundred"> ₱400-499</span><br>
+                            <span class="text-bold" name="select-price"><input type="radio"  name="price" class="open-content-five-hundred"> ₱500-899</span><br>
+                        </div>
+                        <div class=" col-12 pt-5">
+                            <p style="font-size:20px;text-transform: uppercase;font-weight: 600;">type</p>
+                            <span class="text-bold"><input type="radio" name="color" class="open-content-three-hundred"> &nbsp;Men's Dresses</span><br>
+                            <span class="text-bold"><input type="radio" name="color" class="open-content-five-hundred"> &nbsp;Couple's Dresses</span><br>
+                            <span class="text-bold"><input type="radio" name="color" class="open-content-two-hundred"> &nbsp;Ladies Dresses</span><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--left side col end-->
+
+            <!--right side col start-->
+
+            <!--front look-->
+            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12 pl-0" style="border-left:1px solid grey">
+                <div class="container large-right-sider">
+                    <div class="row pt-5 hide-front-page">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                            <a href="logged_in_for-each-image.html#"><img src="Images/p1.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                            <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Black Men's Dress<br>₱399.00</span></a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i> <br>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                            <a href="logged_in_for-each-image.html#"><img src="Images/p2.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                            <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Fresh in Red<br>₱349.00</span></a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i> <br>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                            <a href="logged_in_for-each-image.html#"><img src="Images/p3.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                            <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Comfy Green<br>₱300.00</span></a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i> <br>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                            <a href="logged_in_for-each-image.html#"><img src="Images/p4.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                            <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Green Code<br>₱300.00</span></a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i> <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--second-->
+                    <div class="row pt-5 hide-front-page">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                            <a href="logged_in_for-each-image.html#"><img src="Images/p5.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                            <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Floral Dress<br>₱469.00</span></a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i> <br>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                            <a href="logged_in_for-each-image.html#"><img src="Images/p6.jpg" class="img-men" data-aos="fade-up" style="height:180px"><br></a>
+                            <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Easy Brown<br>₱549.00</span></a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i> <br>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                            <a href="logged_in_for-each-image.html#"><img src="Images/p7.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                            <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Summer Polo<br>₱249.00</span></a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i> <br>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                            <a href="logged_in_for-each-image.html#"><img src="Images/p8.jpg" class="img-men" data-aos="fade-up" style="height:180px"><br></a>
+                            <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Powerful Gingham<br>₱349.00</span></a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i> <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--third-->
+                    <div class="row pt-5 hide-front-page">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                            <a href="logged_in_for-each-image.html#"><img src="Images/p9.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                            <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Easy Brown<br>₱549.00</span></a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i> <br>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                            <a href="logged_in_for-each-image.html#"><img src="Images/p10.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                            <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Fresh in Black<br>₱349.00</span></a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i> <br>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                            <a href="logged_in_for-each-image.html#"><img src="Images/p11.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                            <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Powerful Green<br>₱349.00</span></a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i> <br>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                            <a href="logged_in_for-each-image.html#"><img src="Images/p12.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                            <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Blue Moon<br>₱300.00</span></a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i> <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--fourth-->
+                    <div class="row pt-5 pb-5 hide-front-page">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                            <a href="logged_in_for-each-image.html#"><img src="Images/p13.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                            <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Curdoroy Brown<br>₱749.00</span></a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i> <br>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                            <a href="logged_in_for-each-image.html#"><img src="Images/p14.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                            <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Gothic Chic<br>₱549.00</span></a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i> <br>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                            <a href="logged_in_for-each-image.html#"><img src="Images/p15.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                            <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>B&W Puff Dress<br>₱649.00</span></a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i> <br>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                            <a href="logged_in_for-each-image.html#"><img src="Images/p16.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                            <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Sky Ballerina<br>₱349.00</span></a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i> <br>
+                            </div>
+                        </div>
+                    </div>
+                    <!--font look end-->
+
+                    <!--200 page start-->
+                    <div class="container show-two-hundred-page">
+                        <!--first row-->
+                        <div class="row pt-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/lp-2.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up">Comfy Green<br>₱200.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/lp-4.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up">Rose but Gold<br>₱289.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/lp-6.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Red Velvet<br>₱249.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/lp-1.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up">Safe in White<br>₱279.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+                        <!--second row-->
+                        <div class="row pt-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/lp-3.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up">Sophisticated Brown<br>₱269.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/lp-5.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up">Wonderful Red<br>₱249.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/lp-7.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up">Prince Khaki<br>₱211.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/lp-8.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up">Puff in Cream<br>₱229.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+                        <!--third row-->
+                        <div class="row pt-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p17.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Lady in Red<br>₱279.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p18.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Black Suits Me<br>₱200.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p19.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Princess Navy<br>₱211.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p20.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Pattern Khaki<br>₱269.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+                        <!--fourth row-->
+                        <div class="row pt-5 pb-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p21.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Pink Glow<br>₱200.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p22.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Black Cherry<br>₱279.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p23.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Cool Pattern<br>₱200.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p24.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Blue Men<br>₱211.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--200 page end-->
+
+                    <!--300 page start-->
+
+                    <div class="container show-three-hundred-page">
+                        <!--first row-->
+                        <div class="row pt-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p3.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Earth Love<br>₱369.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p26.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Clean Sandra<br>₱379.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p27.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br> Dr. Pink <br>₱392.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p2.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br> Red Head<br>₱300.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+                        <!--second row-->
+                        <div class="row pt-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p15.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br> White Princess<br>₱349.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p30.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Green Sandra<br>₱342.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p33.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br> Gray Pattern<br>₱312.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p32.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br> Sexy Black<br>₱335.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+                        <!--third row-->
+                        <div class="row pt-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p33.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Chelsea Gray<br>₱350.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p34.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Sophia Gray<br>₱347.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p35.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Amber Brown<br>₱300.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/product8.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Marina Blue<br>₱379.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+                        <!--fourth row-->
+                        <div class="row pt-5 pb-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/product4.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Fresh Lavender<br>₱359.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/product2.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Princess Brown<br>₱369.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p39.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Brown Checkered<br>₱379.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p40.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Fancy Black<br>₱389.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--300 page end-->
+
+                    <!--400 page start-->
+
+                    <div class="container show-four-hundred-page">
+                        <!--first row-->
+                        <div class="row pt-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p36.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Blue Jacob<br>₱469.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p38.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Red and Black Men<br>₱400.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p37.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Feather Blue<br>₱457.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p31.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Gray Patter<br>₱429.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+                        <!--second row-->
+                        <div class="row pt-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p25.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Earth Jacob<br>₱419.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p20.jpg" class="img-men" data-aos="fade-up" style="height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Khaki Pattern<br>₱429.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p29.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Light Green Men<br>₱439.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p23.jpg" class="img-men" data-aos="fade-up" style="height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Khaki Patter #2<br>₱449.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+                        <!--third row-->
+                        <div class="row pt-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p24.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Blue Moon Calix<br>₱469.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p28.jpg" class="img-men" data-aos="fade-up" style="height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Red Marcus<br>₱459.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p18.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Men In Black<br>₱499.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/p7.jpg" class="img-men" data-aos="fade-up" style="height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Summer Yellow Men<br>₱460.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+                        <!--fourth row-->
+                        <div class="row pt-5 pb-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/ladies-dress-1.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Red Polo Men<br>₱453.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/ladies-dress-2.jpg" class="img-men" data-aos="fade-up" style="height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Solo Black<br>₱465.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/ladies-dress-3.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Yellow Ford<br>₱477.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/ladies-dress-4.jpg" class="img-men" data-aos="fade-up" style="height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Daniel Green<br>₱423.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--400 page end-->
+
+                    <!--600 page start-->
+
+                    <div class="container show-five-hundred-page">
+                        <!--first row-->
+                        <div class="row pt-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c1.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="for-each-image.html"><span class="image-lable" data-aos="fade-up"><br>Blue & White Couple<br>₱649.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c2.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Light Blue Couple<br>₱679.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c3.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Mint Green Couple<br>₱789.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c4.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Summer White Couple<br>₱879.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+                        <!--second row-->
+                        <div class="row pt-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c5.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Brown Couple<br>₱600.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c6.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Wedding Type Couple<br>₱719.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c7.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Partners in Red<br>₱800.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c8.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Couple Love Pattern<br>₱679.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+                        <!--third row-->
+                        <div class="row pt-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c9.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Sky Couple<br>₱679.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c10.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Red Orange Couple<br>₱899.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c11.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Corduroy Couple<br>₱769.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c12.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Clean Day Love<br>₱823.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+                        <!--fourth row-->
+                        <div class="row pt-5 pb-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="for-each-image.html"><img src="Images/c13.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="for-each-image.html"><span class="image-lable" data-aos="fade-up"><br>Checkered Yellow Couple<br>₱679.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="for-each-image.html"><img src="Images/c14.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="for-each-image.html"><span class="image-lable" data-aos="fade-up"><br>Black Checkered Couple<br>₱879.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="for-each-image.html"><img src="Images/c15.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="for-each-image.html"><span class="image-lable" data-aos="fade-up"><br>Mintu Green Couple<br>₱722.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="for-each-image.html"><img src="Images/c16.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="for-each-image.html"><span class="image-lable" data-aos="fade-up"><br>Peach Couple<br>₱758.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--600 page end-->
+
+                    <!--700 page start-->
+
+                    <div class="container show-six-hundred-page">
+                        <!--first row-->
+                        <div class="row pt-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="for-each-image.html"><img src="Images/c16.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="for-each-image.html"><span class="image-lable" data-aos="fade-up"><br>Peach Couple<br>₱758.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="for-each-image.html"><img src="Images/c15.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="for-each-image.html"><span class="image-lable" data-aos="fade-up"><br>Mintu Green Couple<br>₱722.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="for-each-image.html"><img src="Images/c14.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="for-each-image.html"><span class="image-lable" data-aos="fade-up"><br>Black Checkered Couple<br>₱879.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="for-each-image.html"><img src="Images/c13.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="for-each-image.html"><span class="image-lable" data-aos="fade-up"><br>Checkered Yellow Couple<br>₱679.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+                        <!--second row-->
+                        <div class="row pt-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c12.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Clean Day Love<br>₱823.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c11.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Corduroy Couple<br>₱769.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c10.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Red Orange Couple<br>₱899.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c9.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Sky Couple<br>₱679.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+                        <!--third row-->
+                        <div class="row pt-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c5.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Brown Couple<br>₱600.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c6.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Wedding Type Couple<br>₱719.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c7.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Partners in Red<br>₱800.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c8.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Couple Love Pattern<br>₱679.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+                        <!--fourth row-->
+                        <div class="row pt-5">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c1.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="for-each-image.html"><span class="image-lable" data-aos="fade-up"><br>Blue & White Couple<br>₱649.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  text-center">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c2.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Light Blue Couple<br>₱679.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 text-center hide-containt-tablate">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c3.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Mint Green Couple<br>₱789.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 text-center hide-containt-small-device">
+                                <a href="logged_in_for-each-image.html#"><img src="Images/c4.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Summer White Couple<br>₱879.00</span></a>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i> <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--pagination-->
+                    <div class="row next-page-header pt-5">
+                        <div class="col next-page" style="z-index: 0;">
+                            <ul class="pagination" style="display: flex;justify-content: center;">
+                                <li class="page-item prev"><a class="page-link" href="#/" style="color:rgba(234, 101, 132, 0.996)">Previous</a></li>
+                                <li class="page-item open-content-one-hundred" id="one-hundred"><a class="page-link" href="#/" style="color:rgba(234, 101, 132, 0.996)">1</a></li>
+                                <li class="page-item open-content-two-hundred"><a class="page-link" href="#/" style="color:rgba(234, 101, 132, 0.996)">2</a></li>
+                                <li class="page-item open-content-three-hundred"><a class="page-link" href="#/" style="color:rgba(234, 101, 132, 0.996)">3</a></li>
+                                <li class="page-item open-content-four-hundred"><a class="page-link" href="#/" style="color:rgba(234, 101, 132, 0.996)">4</a></li>
+                                <li class="page-item open-content-five-hundred"><a class="page-link" href="#/" style="color:rgba(234, 101, 132, 0.996)">5</a></li>
+                                <li class="page-item next"><a class="page-link" href="#/" style="color:rgba(234, 101, 132, 0.996)">Next</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--pagination-->
+                    <!--700 page end-->
+                </div>
+            </div>
+            <!--right side col end-->
+        </div>
+    </div>
+    <!--middle large device end-->
+    <!--middle part of small device start-->
+    <!--filter-->
+    <div class="container-fluid hide-me-for-font">
+        <div class="row first-next-page pt-4 mt-3">
+            <div class="col-12 text-right pr-5 filter-button">
+                <div class="dropdown">
+                    <button class="filter-toggler"><i class="fa fa-filter" aria-hidden="true"></i>FILTER</button>
+                    <!-- The Modal -->
+                    <div class="container mt-1" id="small-left-sider" style="position:absolute;z-index:5;border:0.1px solid;background-color:rgb(255, 255, 255);width:50%;transform: translateX(100%);">
+                        <div class="row">
+                            <div class="col-12 text-left pt-3">
+                                <span style="font-size:18px;text-transform: uppercase;font-weight: 600;" class="pl-4">price</span><br>
+                                <span class="text-bold" name="select-price"><input type="radio" name="price" class="open-small-content-one-hundred"> ₱ 200-300</span><br>
+                                <span class="text-bold" name="select-price"><input type="radio" name="price" class="open-small-content-two-hundred"> ₱ 300-400</span><br>
+                                <span class="text-bold" name="select-price"><input type="radio" name="price" class="open-small-content-three-hundred"> ₱ 400-500</span><br>
+                                <span class="text-bold" name="select-price"><input type="radio"  name="price" class="open-small-content-four-hundred"> ₱ 600-700</span><br>
+                                <span class="text-bold" name="select-price"><input type="radio"  name="price" class="open-small-content-five-hundred"> ₱ 800-900</span><br>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 pt-2 for-small-devices">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-12 text-center pb-5">
+                <a href="logged_in_for-each-image.html#"><img src="Images/p2.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Fresh in Red<br>₱349.00</span></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i> <br>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 text-center">
+                <a href="logged_in_for-each-image.html#"><img src="Images/p3.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Comfy Green<br>₱300.00</span></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i> <br>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 text-center hide-content">
+                <a href="logged_in_for-each-image.html#"><img src="Images/p3.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Comfy Green<br>₱300.00</span></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i> <br>
+                </div>
+            </div>
+        </div>
+        <!--second row-->
+        <div class="row pt-5">
+            <div class="col-md-4 col-sm-6 col-12 text-center pb-5">
+                <a href="logged_in_for-each-image.html#"><img src="Images/p4.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Green Code<br>₱300.00</span></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i> <br>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 text-center">
+                <a href="logged_in_for-each-image.html#"><img src="Images/p6.jpg" class="img-men" data-aos="fade-up" style="height:180px"><br></a>
+                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Easy Brown<br>₱549.00</span></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i> <br>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 text-center hide-content">
+                <a href="logged_in_for-each-image.html#"><img src="Images/p7.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Summer Polo<br>₱249.00</span></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i> <br>
+                </div>
+            </div>
+        </div>
+        <!--third row-->
+        <div class="row pt-5">
+            <div class="col-md-4 col-sm-6 col-12 text-center pb-5">
+                <a href="logged_in_for-each-image.html#"><img src="Images/p8.jpg" class="img-men" data-aos="fade-up" style="height:180px"><br></a>
+                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Powerful Gingham<br>₱349.00</span></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i> <br>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 text-center">
+                <a href="logged_in_for-each-image.html#"><img src="Images/p9.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Easy Brown<br>₱549.00</span></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i> <br>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 text-center hide-content">
+                <a href="logged_in_for-each-image.html#"><img src="Images/p10.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Fresh in Black<br>₱349.00</span></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header- of all the right side container--->
+    <div class="hide-me-for-font">
+        <!--header- of all the right side container--->
+        <div class="container show-two-hundred-small-page">
+            <!--first row-->
+            <div class="row pt-5">
+                <div class="col-md-4 col-sm-6 col-12 text-center pb-5">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/lp-2.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Comfy Green<br>₱200.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 text-center">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/lp-4.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Rose but Gold<br>₱289.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 text-center hide-content">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/lp-6.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Red Velvet<br>₱249.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+            </div>
+            <!--second row-->
+            <div class="row pt-5">
+                <div class="col-md-4 col-sm-6 col-12 text-center pb-5">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/lp-1.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Safe in White<br>₱279.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 text-center">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/lp-3.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Sophisticated Brown<br>₱269.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 text-center hide-content">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/lp-5.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"><br></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Wonderful Red<br>₱249.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+            </div>
+            <!--third row-->
+            <div class="row pt-5">
+                <div class="col-md-4 col-sm-6 col-12 text-center pb-5">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/lp-3.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Prince Khaki<br>₱211.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 text-center">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/lp-8.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Puff in Cream<br>₱229.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 text-center hide-content">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/p17.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Lady in Red<br>₱279.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container show-three-hundred-small-page">
+            <!--first row-->
+            <div class="row pt-5">
+                <div class="col-md-4 col-sm-6 col-12 text-center pb-5">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/p3.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Earth Love<br>₱369.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 text-center">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/p26.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Clean Sandra<br>₱379.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 text-center hide-content">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/p27.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br> Dr. Pink <br>₱392.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+            </div>
+            <!--second row-->
+            <div class="row pt-5">
+                <div class="col-md-4 col-sm-6 col-12 text-center pb-5">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/p2.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br> Red Head<br>₱300.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 text-center">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/p15.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br> White Princess<br>₱349.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 text-center hide-content">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/p30.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Green Sandra<br>₱342.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+            </div>
+            <!--third row-->
+            <div class="row pt-5">
+                <div class="col-md-4 col-sm-6 col-12 text-center pb-5">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/p32.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br> Sexy Black<br>₱335.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 text-center">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/p33.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Chelsea Gray<br>₱350.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 text-center hide-content">
+                    <a href="logged_in_for-each-image.html#"><img src="Images/p34.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;height:180px"></a>
+                    <a href="logged_in_for-each-image.html#"><span class="image-lable" data-aos="fade-up"><br>Sophia Gray<br>₱347.00</span></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row next-page-header pt-5">
+            <div class="col next-page" style="z-index: 0;">
+                <ul class="pagination" style="display: flex;justify-content: center;">
+                    <li class="page-item prev"><a class="page-link" href="#/" style="color:rgba(234, 101, 132, 0.996)">Previous</a></li>
+                    <li class="page-item open-content-one-hundred" id="one-hundred"><a class="page-link" href="#/" style="color:rgba(234, 101, 132, 0.996)">1</a></li>
+                    <li class="page-item open-content-two-hundred"><a class="page-link" href="#/" style="color:rgba(234, 101, 132, 0.996)">2</a></li>
+                    <li class="page-item open-content-three-hundred"><a class="page-link" href="#/" style="color:rgba(234, 101, 132, 0.996)">3</a></li>
+                    <li class="page-item open-content-four-hundred"><a class="page-link" href="#/" style="color:rgba(234, 101, 132, 0.996)">4</a></li>
+                    <li class="page-item open-content-five-hundred"><a class="page-link" href="#/" style="color:rgba(234, 101, 132, 0.996)">5</a></li>
+                    <li class="page-item next"><a class="page-link" href="#/" style="color:rgba(234, 101, 132, 0.996)">Next</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--pagination-->
+        <!--500-600 page end-->
+    </div>
+    </div>
+
+    <!--related products-->
+    <div class="container" style="height:80vh">
+        <div class="row">
+            <div class="col-sm-12 text-center pt-5">
+                <a href="for-each-image.html"><span style="text-transform: uppercase;font-weight: 700;font-size:30px;">RELATED PRODUCTS</span></a>
+            </div>
+        </div>
+        <div class="row single-slider pt-5">
+            <div class="col text-center">
+                <a href="for-each-image.html"><span style="display:flex;justify-content: center;"><img src="Images/t1.png" height="250px" style="background-color:light rgb(194, 194, 194)"></span></a>
+                <a href="for-each-image.html"><span class="image-lable">Black Pattern Women<br>₱380.00</span></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i> <br>
+                </div>
+            </div>
+            <div class="col  text-center">
+                <a href="for-each-image.html"><span style="display:flex;justify-content: center;"><img src="Images/t4.png" height="250px"></span></a>
+                <a href="for-each-image.html"><span class="image-lable">Green Men's Dress<br>₱480.00</span></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i> <br>
+                </div>
+            </div>
+            <div class="col  text-center">
+                <a href="for-each-image.html"><span style="display:flex;justify-content: center;"><img src="Images/t7.png" height="250px"></span></a>
+                <a href="for-each-image.html"><span class="image-lable">Formal Green Dress<br>₱300</span></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i> <br>
+                </div>
+            </div>
+            <div class="col text-center">
+                <a href="for-each-image.html"><span style="display:flex;justify-content: center;"><img src="Images/t6.png" height="250px"></span></a>
+                <a href="for-each-image.html"><span class="image-lable">Couple Khaki Dress<br>₱700.00</span></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i> <br>
+                </div>
+            </div>
+            <div class="col  text-center">
+                <a href="for-each-image.html"><span style="display:flex;justify-content: center;"><img src="Images/t3.png" height="250px"></span></a>
+                <a href="for-each-image.html"><span class="image-lable">White Jacob<br>₱250.00</span></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i> <br>
+                </div>
+            </div>
+            <div class="col text-center">
+                <a href="for-each-image.html"><span style="display:flex;justify-content: center;"><img src="Images/t5.png" height="250px"></span></a>
+                <a href="for-each-image.html"><span class="image-lable">Gray Tuxedo<br>₱650.00</span></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i> <br>
+                </div>
+            </div>
+            <div class="col  text-center">
+                <a href="for-each-image.html"><span style="display:flex;justify-content: center;"><img src="Images/t2.png" height="250px"></span></a>
+                <a href="for-each-image.html"><span class="image-lable">Sassy Brown<br>₱480.00</span></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--related products end-->
+    <!--footer-->
+    <div class="container-fluid bg-dark text-white">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 footer pt-5">M&H.Co</p>
+                    <p data-aos="slide-right">Meracle & Hannah prioritizes giving men and women confidence and comfort by providing<br>the highest quality dresses at very low prices<br>and in a more sustainable manner.<br>This brand focuses on elevating and serve looks for everyday
+                        <br></p>
+
+                </div>
+                <div class="col-xl-3 pt-5 hide-girl">
+                    <span style="font-size:20px;text-transform: uppercase;font-weight: 800;" data-aos="zoom-in-left">products</span><br>
+                    <p style="margin-top:3%" data-aos="slide-up">Women's Dresses</p>
+                    <p style="margin-top:-3%" data-aos="slide-up">Men's Dresses</p>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 footer  pt-5">
+                    <span style="font-size:20px;text-transform: uppercase;font-weight: 800;" class="text-center" data-aos="zoom-in-left">Follow us:</span><br>
+                    <p style="margin-top:3%;margin-left:1%;" data-aos="fade-up">Instagram.com/m&h.co</p>
+                    <p style="margin-top:-3%;margin-left:1%;" data-aos="fade-up">Facebook.com/m&h.co</p>
+                    <p style="margin-top:-3%;margin-left:1%;" data-aos="fade-up">TikTok.com/m&h.co</p>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12 col-12 footer pt-5 pb-3">
+                    <p style="font-size:20px;text-transform: uppercase;font-weight: 800;" data-aos="slide-left">contact</p>
+                    <p data-aos="fade-up"><i class="fa fa-home" aria-hidden="true" style="font-size:20px;"></i>&nbsp; <br> Quezon City, Philippines 1117</p>
+                    <p data-aos="fade-up"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; m&h.co@gmail.com</p>
+                    <p data-aos="fade-up"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; <br>09395809133</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr style="color:white;width:100%;border:1px solid">
+    <div class="container mt-4 pb-4">
+        <div class="row">
+            <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
+                <p>© 2022 M&H.Co | Meracle & Hannah <span style="font-weight:600">PH</span></p>
+            </div>
+            <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 icon-head">
+                <span class="icons-2"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                <span class="icons-3"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                <span class="icons-1"><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+                <span class="icons"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--footer-->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+
+</html>

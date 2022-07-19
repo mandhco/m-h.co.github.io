@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS_files/about-us.css">
+    <script src="JS_files/about-us.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="images/png" href="images/icon.png" sizes="40x40">
+</head>
+
+<body>
+    <div class="container-fluid text-white" id="change-color">
+        <div class="row" id="top-containt">
+            <div class="col-4 text-center">
+                <a href="login-ecommerce.html"><img src="Images/shopping-logo.png" height="90px" class="color logo-1 logo-sift"></a>
+                <div class="small-devices-logo">
+                    <a href="login-ecommerce.html"><img src="Images/profile-icon.png" height="70px" class=" color logo-2 mt-1 ml-2"></a>
+                </div>
+            </div>
+            <div class="col-8 pt-4 mt-1 text-center">
+                <span class="dropdown dropdown-toggle profile" data-toggle="dropdown" style="color:rgba(234, 101, 132, 0.996);
+                ">
+              <a href="#/"><img src="Images/profile-icon.png" class="profile-icon color"></a>
+            </span>
+                <ul class="dropdown-menu mt-4 text-center" style="margin-left:-6%;border-radius:10px;">
+                    <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Help Center </a></li>
+                    <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Order History</a></li>
+                    <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Change Password</a></li>
+                    <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Update Profile</a></li>
+                    <li class="pre-profile-1 pt-2 pb-2"><a href="ecommerce.html" class="color" style="font-weight:600">Log Out</a></li>
+                </ul>
+                <span class="menu-1"><a href="login-ecommerce.html" class="color">home</a></span>
+                <span class="menu"><a href="Logged_in_product_page.html" class="color">shop</a></span>
+                <span class="menu"><a href="logged_in_about_us.html" class="color">about</a></span>
+                <span class="menu"><a href="contact-form.html" class="color">contact</a></span>
+                <span class="menu-bar text-right"><a href="#/" class="color">&#9776;</a></span>
+                <span class="menu-bar-1 text-right"><a href="#/" class="color">&#9776;</a></span>
+                <span class="menu-bar-2 text-right"><a href="#/" class="color">&#9776;</a></span>
+            </div>
+        </div>
+        <div class="container-fluid side-bar px-0">
+            <div class="col-12 text-right bg-danger">
+                <span class="close"><a href="#/" class="color">&times;</a></span>
+            </div>
+            <ul class="pt-5 pre-side-bar">
+                <li class="pt-4" style="margin-left:-5%;"><a href="login-ecommerce.html" class="color">home</a></li>
+                <li class="pt-3" style="margin-left:-5%"><a href="Logged_in_product_page.html" class="color">shop</a></li>
+                <li class="pt-3" style="margin-left:-5%"><a href="logged_in_about_us.html" class="color">about</a></li>
+                <li class="pt-3" style="margin-left:-5%"><a href="contact-form.html" class="color">contact</a></li>
+                <li class="pt-3" style="margin-left:-5%"><a href="#/" class="color">Update profile</a></li>
+                <li class="pt-3" style="margin-left:-5%"><a href="ecommerce.html" class="color">Log Out</a><span><a href="#" class="color"><img src="Images/log-in..png" class="log-in"></a></span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row pt-5">
+            <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 mt-3">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row pt-3 pb-3">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+                                <span style="font-size:20px;font-weight:700;color:grey;color:rgba(234, 101, 132, 0.996)">Return/Refund</span>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12  text-right">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Deliver back to &nbsp;<input type="text" placeholder="Type Warehouse">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-body">
+                            <div class="row pb-3 ">
+                                <div class="col-xl-4 col-lg-2 col-md-3 col-sm-3 col-12 pt-5 text-center">
+                                    <img src="Images/c16.jpg" height="200px">
+                                    <p><br>SELECT REASON</p>
+                                    <div class="text-left">
+                                        <select name="Qunatity" class="custom-select mt-2 first">
+                              <option selected></option>
+                              <option value="1">Did not receive the full order</option>
+                              <option value="2">Did not receive part of the order (e.g. missing item or parts)</option>
+                              <option value="3">Received wrong Products (wrong variation)</option>
+                              <option value="4">Received products with damage</option>
+                              <option value="5">Received a faulty product (malfunctioning)</option>
+                              <option value="6">Received a counterfeit product</option>
+                            </select>
+                                    </div>
+                                    <br>
+                                    <p>SELECT SOLUTION</p>
+                                    <div class="text-left">
+                                        <select name="Qunatity" class="custom-select mt-2 first">
+                                            <option selected></option>
+                              <option value="1">Refund the money and send back the product</option>
+                              <option value="2">Refund the money for missing products</option>
+                              <option value="3">The seller should send a new parcel</option>
+                              <option value="4">I want the seller to give me bonus</option>
+                            </select>
+                                    </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-10 col-md-8 col-sm-8 col-12 pt-5">
+                                    <p>Item Name:&nbsp;Peach Couple</p>
+                                    <p>Order ID: PXXJEFIOWDMOFL</p>
+                                    <p>Size:Female S</p>
+                                    <p>Size:Male L</p>
+                                    <p>Price:₱757</p>
+                                    <p><a href="#/" style="font-weight:700">CANCEL RETURN</a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pr-5 text-right">
+                                    <p><button style="text-transform: uppercase;padding:2% 5%;background-color: pink;color:white;border-color:transparent" data-toggle="collapse" data-target="#collapseTwo,#payment-option"><a href="return-payment.html" style="color: black;">SUBMIT</a></button></p>
+                                </div>
+
+</body>
+
+</html>
